@@ -5,7 +5,6 @@
   // Same file GitHub Pages serves (main:/docs) — single source of truth.
   "assets": {
     "directory": "./docs"
-  }
-  // Enable once the also.here zone is active in Cloudflare:
-  // "routes": [{ "pattern": "also.here", "custom_domain": true }]
+  },
+  "routes": [{ "pattern": "also.here", "custom_domain": true }]
 }
