@@ -1,10 +1,13 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "also-here",
+  "main": "worker.js",
   "compatibility_date": "2026-11-01",
   // Same file GitHub Pages serves (main:/docs) — single source of truth.
   "assets": {
-    "directory": "./docs"
+    "directory": "./docs",
+    "binding": "ASSETS",
+    "run_worker_first": ["/lax", "/lax/*", "/slnc", "/slnc/*"]
   },
   "routes": [
     { "pattern": "also.here", "custom_domain": true },
