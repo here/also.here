@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "also-here",
+  "compatibility_date": "2026-11-01",
+  // Same file GitHub Pages serves (main:/docs) — single source of truth.
+  "assets": {
+    "directory": "./docs"
+  }
+  // Enable once the also.here zone is active in Cloudflare:
+  // "routes": [{ "pattern": "also.here", "custom_domain": true }]
+}
