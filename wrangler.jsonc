@@ -6,5 +6,9 @@
   "assets": {
     "directory": "./docs"
   },
-  "routes": [{ "pattern": "also.here", "custom_domain": true }]
+  "routes": [
+    { "pattern": "also.here", "custom_domain": true },
+    // Wildcard subdomains: proxied *.also.here AAAA 100:: record + zone route
+    { "pattern": "*.also.here/*", "zone_name": "also.here" }
+  ]
 }
